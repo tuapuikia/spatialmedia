@@ -8,6 +8,6 @@ RUN pip install git+https://github.com/google/spatial-media.git
 
 WORKDIR /working
 
-COPY run.sh .
+COPY run.sh /usr/local/sbin/.
 
-ENTRYPOINT ["./run.sh"]
+ENTRYPOINT ["/usr/local/sbin/run.sh"]
